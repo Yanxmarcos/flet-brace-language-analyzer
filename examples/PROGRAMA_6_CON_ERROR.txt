@@ -1,0 +1,16 @@
+entero main() {
+    entero $arreglo[3] = {1, 2, 3};
+    entero $suma = 0;
+    entero $i = 0;
+    mientras ( $i < 3 } { //Error parentesis, no va } va parentesis )
+        $suma = $suma + $arreglo[i];  // Error: falta el `$` en `i`
+        $i = $i + 1;
+    }
+    escribir("La suma es: ", $suma);
+    retornar;
+  //Falta valor en retornar
+}
+cadena $funcion_extra() {
+    cadena $mensaje = "Hola";
+    retornar $mensaje;
+}

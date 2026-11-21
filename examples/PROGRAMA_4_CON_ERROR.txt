@@ -1,0 +1,14 @@
+entero main() {
+    entero $n = 5;
+    entero $factorial = 1;
+    mientras ($n > 0) {
+        $factorial = factorial * $n;  // Error falta $ lexico
+        $n = $n - 1   //Error sintactico, falta ;
+    }
+    escribir("El factorial es: ", $factorial);
+    retornar 0;
+}
+entero funcion_extra() {
+    entero $x = 10;
+    retornar $x;
+}

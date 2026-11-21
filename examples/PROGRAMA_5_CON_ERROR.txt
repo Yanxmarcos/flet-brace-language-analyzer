@@ -1,0 +1,12 @@
+entero main() {
+    entero $i = 0;
+    mientras $i < 10 {  // Error: falta paréntesis
+        escribir("Iteración: ", $i);
+        $i++;
+    }
+    retornar 0;
+}
+real funcion_extra() {
+    real $x = 3.14;
+    retornar $x * 2;
+}

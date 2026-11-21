@@ -1,0 +1,20 @@
+entero main() {
+    entero $numero = 7;
+    entero $es_primo = 1; // 1 = verdadero, 0 = falso
+    si ($numero <= 1) {
+        $es_primo = 0;
+    } sino {
+        para (entero $i = 2; $i * $i <= $numero; $i = $i + 1) {
+            si ($numero % $i == 0) {
+                $es_primo = 0;
+                romper;
+            }
+        }
+    }
+    si ($es_primo == 1) {
+        escribir($numero, " es un número primo.");
+    } sino {
+        escribir($numero, " no es un número primo.");
+    }
+    retornar 0;
+}

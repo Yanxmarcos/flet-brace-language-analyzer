@@ -1,0 +1,9 @@
+entero main() {
+    entero $n = 5;
+    entero $factorial = 1;
+    para (entero $i = 1; $i <= $n; $i = $i + 1) {
+        $factorial = $factorial * $i;
+    }
+    escribir("El factorial de ", $n, " es: ", $factorial);
+    retornar 0;
+}

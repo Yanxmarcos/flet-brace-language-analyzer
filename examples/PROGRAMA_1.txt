@@ -1,0 +1,10 @@
+entero $global;
+entero main() {
+    entero $arreglo[5] = {1, 2, 3, 4, 5};
+    entero $suma = 0;
+    para (entero $i = 0; $i < 5; $i = $i + 1) {
+        $suma = $suma + $arreglo[$i];
+    }
+    escribir("La suma de los elementos del arreglo es: ", $suma);
+    retornar 0;
+}
